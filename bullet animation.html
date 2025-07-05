@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            overflow-x: hidden;
+            width: 100%;
+        }
+        .two{
+            display: none;
+        }
+        .one{
+            cursor: pointer;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        .three{
+            list-style-type: none;
+            margin: 13px 0;
+            padding: 0;
+
+        }
+        .three li{
+            margin-bottom: 8px;
+            font-size: 18px;
+            opacity: 0;
+            transform: translateX(100%);
+            transition-property: opacity,transform;
+            transition-duration: 0.3s;
+            transition-timing-function: cubic-bezier(0.750,-0.015,0.565,1.055);
+        }
+         
+        .two:checked ~ .three li{
+
+            opacity: 1;
+            transform: translateX(0);
+            transition-delay:calc(0.055s * var(--i)) ;
+        }
+
+        
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <label for="level" class="one">MENU :</label>
+        <input type="checkbox" id="level" class="two">
+    
+    <ul class="three">
+        <li style="--i:0">Menu</li>
+        <li style="--i:1">Home</li>
+        <li style="--i:2">Privacy</li>
+        <li style="--i:3">About</li>
+        <li style="--i:4">contact</li>
+        <li style="--i:5">Feedback</li>
+    </ul>
+    </div>
+</body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        @keyframes bouncing-letters {
+            to {
+                opacity: 0.1;
+                transform: translate3d(0, -16px, 0);
+
+            }
+
+        }
+
+        .bouncing-letters {
+            display: flex;
+            justify-content: center;
+
+        }
+
+        .bouncing-letters > div{
+            width: 16px;
+            height: 16px;
+            margin: 3rem 0.2rem;
+            background: rgb(153, 145, 145);
+            color:white;
+            border-radius: 50%;
+            text:center;
+            animation: bouncing-letters 0.6s infinite alternate;
+        }
+
+        .bouncing-letters > div:nth-child(1){
+            animation-delay: 0.2s;
+        }
+
+        .bouncing-letters > div:nth-child(2){
+            animation-delay: 0.4s;
+        }
+
+
+        .bouncing-letters > div:nth-child(3){
+            animation-delay:0.6 ;
+        }
+
+        .bouncing-letters > div:nth-child(4){
+            animation-delay: 0.8s;
+        }
+
+        .bouncing-letters > div:nth-child(5){
+            animation-delay: 0.10s;
+        }
+
+        .bouncing-letters > div:nth-child(6){
+            animation-delay: 0.2s;
+        }
+
+
+        .bouncing-letters > div:nth-child(7){
+            animation-delay:0.2s ;
+        }
+
+
+        .bouncing-letters > div:nth-child(8){
+            animation-delay: 0.4s;
+        }
+
+
+        .bouncing-letters > div:nth-child(9){
+            animation-delay: 0.5s;
+        }
+
+        .bouncing-letters > div:nth-child(10){
+            animation-delay: 0.7s;
+        }
+
+        .bouncing-letters > div:nth-child(11){
+            animation-delay: 0.9s;
+        }
+
+        .bouncing-letters > div:nth-child(12){
+            animation-delay: 0.2s;
+        }
+
+        .bouncing-letters > div:nth-child(13){
+            animation-delay: 0.4s;
+        }
+
+        .bouncing-letters > div:nth-child(14){
+            animation-delay: 0.6s;
+        }
+
+        .bouncing-letters > div:nth-child(15){
+            animation-delay: 0.8s;
+        }
+
+
+
+
+
+
+    </style>
+
+</head>
+
+<body>
+    <div class="bouncing-letters">
+        <div>T</div>
+        <div>H</div>
+        <div>I</div>
+        <div>R</div>
+        <div>U</div>
+        <div>N</div>
+        <div>A</div>
+        <div>V</div>
+        <div>U</div>
+        <div>K</div>
+        <div>K</div>
+        <div>A</div>
+        <div>R</div>
+        <div>A</div>
+        <div>U</div>
+        <div>.E</div>
+        
+    </div>
+    
+</body>
+</html>

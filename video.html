@@ -1,0 +1,65 @@
+<html>
+
+<head>
+    <style>
+
+    .devil{
+
+        padding-bottom: 0;
+    }
+
+</style>
+
+</head>
+
+<body>
+
+    <div class="devil" style="text-align: center;"  >
+        <button onclick="playpause()">play/pause</button>
+        <button onclick="makebig()">big</button>
+        <button onclick="makesmall()">small</button>
+        <button onclick="makenormal()">normal</button>
+
+    <br>
+    <br>
+
+    <video id ="thiru" width="400px" height="700px" autoplay muted controls>
+        <source src="tera bina song.mp4" type="video/mp4">
+
+    </video>
+
+</div>
+
+<script>
+        var myvideo = document.getElementById("thiru")
+
+
+function playpause() {
+    if(myvideo.paused)
+    myvideo.play();
+
+    else
+    myvideo.pause()
+}
+
+ function makebig() {
+    myvideo.width = 700;
+    myvideo.hight = 1000;
+}
+
+function makesmall() {
+    myvideo.width = 300;
+    myvideo.hight = 300;
+}
+
+function makenormal() {
+    myvideo.width = 400;
+}
+
+</script>
+
+
+
+</body>
+
+</html>

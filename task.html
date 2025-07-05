@@ -1,0 +1,251 @@
+<html>
+
+<head>
+
+<TITLE>input types</TITLE>
+    
+<style>
+    .one{
+        background-color: rgb(194, 227, 227);
+        height: 1000px;
+        width: 600px;
+       padding: 30px;  
+       margin-top:0%;
+       border: 3px solid greenyellow; 
+    }
+    .five{
+        padding-left: 80px;
+    }
+
+    .six{
+        background-color: rgb(66, 66, 117);
+        color: greenyellow;
+        height: 30px;
+        width: 60px;
+        
+        
+    }
+
+    .three{
+        background-color: rgb(115, 71, 156);
+        color: yellow;
+        height: 30px;
+        width: 60px;
+    }
+
+   .six:hover{
+    background-color: blue;
+   }
+
+   .three:hover{
+    background-color:blueviolet ;
+   }
+
+</style>
+
+</head>
+
+<body>
+
+    
+
+
+    
+    <form>
+        <table class="one" cellpadding="4px" align="center">
+       
+        <tr>
+            <td colspan="3"><h1 class="five">YOUR INFORMATION</h1></td>
+            
+        </tr> 
+            <BR><br>
+        <tr>
+           <td><label for="fname">Name :</label></td>
+            <td><input type="text" id="fname" name="fname" size="20" placeholder="Enter Your First Name" required> -
+        <input type="text" id="fname" name="fanme" placeholder=" Enter Your last name" required></td><br><br>
+            
+        </tr>
+
+
+        <tr>
+            <td><label for=father>Father Name :</label></td>
+        <td><input type="text" id="father" name="father" size="40" placeholder="Enter Your father name"></td><br><br>
+
+        </tr>
+
+        <tr>
+            <td><label for="date">Date of birth:</label></td>
+        <td><input type="date" id="date" size="4" name="date" value="" placeholder="Year">
+        </td><br><br>
+        </tr>
+
+        <tr>
+           <td><label for="mobile">Mobile no :</label></td>
+           <td><input type="text" id="mobile" size="1" name="mobile" value="+91">-
+        <input type="number" id="mobile" size="30" name="mobile" placeholder="Enter Your mobile no" required></td>
+        </tr>
+        <br><br>
+        
+        <tr>
+            <td><label for="gender">Gender :</label></td>
+            <td><input type="radio" id="gender" name="gender">Male
+        <input type="radio" id="gender" name="gender">Female </td><br><br>
+        
+        </tr>
+
+        <tr>
+
+          <td><label for="dept">Department :</label></td>
+          <td><input type="checkbox" id="dept" name="dept" value="">CSE
+        <input type="checkbox" id="dept" name="dept">IT
+        <input type="checkbox" id="dept" name="dept">B.COM
+        <input type="checkbox" id="dept" name="dept">B.TECH
+        <input type="checkbox" id="dept" name="dept">MSC </td>
+        
+        </tr>
+        
+        <br><br>
+
+        <tr>
+
+          <td><form action="/action_page.php"oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+          Fill Your Marks </td>
+          <td><input type="range" id="a" name="a" value="50">
+          50 +
+          <input type="number" id="b" name="b" value="50"> 
+          <output name="x" for="a b"></output></td>
+        </tr> <br><br>
+  
+         <tr> 
+
+          <td><label for="file">Degree certificate :</label></td>
+          <td><input type="file" id="file" name="file"></td><br><br>
+         
+        </tr>
+
+        <tr>
+           <td><input type="button" value="upload"><td><br><br>
+        
+        </tr>
+ 
+        <tr>
+           <td><label for="crt">Add your photo :</label></td>
+           <td><input type="image" id="crt" name="crt" src="wallapaper.jpg" width="50" height="50"></td><br><br>
+        </tr>
+        <br><br>
+        
+
+        <tr>
+            <td><label for="cor">Coureses completed :</label></td>
+            <td><select id="cor" name="cor">
+            <option>java Fullstack development</option>
+            <option>python</option>
+            <option>Dotnet</option>
+        </select></td>
+        </tr>
+        <br><br>
+
+        <tr>
+            <td><label for="url">Project URL :</label></td>
+            <td><input type="url" id="url" placeholder="Enter Your URL" required></td>
+        </tr>
+        <BR>
+        <br>
+        
+
+        <tr>
+            <td><label for="file"> Cource certificate :</label></td>
+            <td><input type="file" id="file" name="file"></td>
+        </tr>
+        <br><br>
+
+        <tr>
+         <td><label for="cor">Country :</label></td>
+         <td><select id="cor" name="cor">
+            <option>-------select the contry-------</option>
+            <option>India</option>
+            <option>Pakisthan</option>
+            <option>China</option>
+            <option>US</option>
+        </select></td>
+        
+        </tr>
+        <br><br>
+
+        <tr>
+
+        <td><label for="cor">State :</label></td>
+        <td><select id="cor" name="cor">
+            <option>--------select State-----------</option>
+            <option>TAMILNADU</option>
+            <option>ANDHARAPRADESH</option>
+            <option>KERALA</option>
+            <option>JAMMU AND KASHMIR</option>
+        </select></td>
+        </tr>
+        <br><br>
+
+        <tr>
+            <td><label for="cor">District :</label></td>
+            <td><select id="cor" name="cor">
+            <option>--------select District-----------</option>
+            <option>VELLORE</option>
+            <option>KANCHIPURAM</option>
+            <option>CHENNAI</option>
+            <option>SALEM</option>
+        </select></td>
+        
+        </tr>
+        <br><br>
+
+       
+        <tr> 
+            <td><label for="add">Address :</label></td><br>
+            <td><textarea id="add" name="add"  cols="50" rows="5" placeholder="Enter Your Address" required></textarea></td>
+        </tr>
+        <br><br>
+
+        
+        <tr>
+            <td><label for="email"> Email Id :</label></td>
+            <td><input type="email" id="email" size="40"  name="email" placeholder="example12@gmail.com" required></td>
+            
+        </tr>
+        <br>
+        <br>
+
+        <tr>
+
+          <td><label for="pwd">Password :</label></td>
+          <td><input type="password" id="pwd" name="pwd" placeholder="Enter your password" required></td>
+        
+        </tr>
+        <br><br>
+
+        
+        <tr>
+            <td><label for="color">Choose your fav-Color :</label></td>
+           <td><input type="color" id="color" name="color"></td>
+
+        </tr>
+        <br><br>
+
+           <tr>
+             <td><input class="six" type="reset" value="Reset">
+        
+            <input  class="three" type="submit" value="Submit"></td>
+
+            </tr>
+         
+
+       
+    
+    
+    </table>
+
+    </form> 
+
+</body>
+
+
+</html>
