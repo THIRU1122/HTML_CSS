@@ -1,0 +1,119 @@
+<html>
+<head>
+    <style>
+        .one{
+            padding-left: 30px;
+            
+            
+        }
+
+
+
+    </style>
+
+</head> 
+
+
+<body>
+<center>
+
+<fieldset class="one">
+    <h2>YOUR DETAILES</h2>
+
+    <legend>your perosnal details</legend>
+    <label for="fname">Name:</label>
+    <input type="text" id="fname" name="fname" value="Thiru"><br><br>
+
+    <label for="Email">Email:</label>
+    <input type="text" id="Email" name="email" value="thirunavukkarasu39@gmail.com"><br><br>
+
+    <label for="Phone">Phone:</label>
+    <input type="number" id="Phone" name="Phone" value="9003759765"><br><br>
+
+    <h2>YOUR ADDRESS</h2>
+
+    <label for="address">Address:</label>
+    <input type="text" id="address" name="address" value="no13,murungai pattai st, thakkolam,arakkonam,ranipettai-631151"><br><br>
+
+    <label for="postcode">postcode:</label>
+    <input type="text" id="postcode" name="postcode" value="631151"><br><br>
+
+    <label for="country">country:</label>
+    <input type="text" id="country" name="country" value="INDIA"><br><br>
+
+    <h2>CARD DETAILES</h2>
+
+    <label for="cardtype">card type</label>
+    <input type="radio" id="visa" name="fav_card" value="visa">
+
+    <label for="VISA">VISA</label>
+    <input type="radio" id="AmEx" name="fav_card" value="AmEx">
+
+    <label for="AmEx">AmEx</label>
+    <input type="radio" id="Mastercard " name="fav_card" value="Mastercard">
+    <label for="Mastercard">Mastercard</label><br><br>
+
+    <label for="cardnumber">Cardnumber:</label>
+    <input type="number" id="cardnumber" name="cardnumber" value="123456"><br><br>
+
+    <label for="securitycode">security code:</label>
+    <input type="number" id="securitycode" name="securitycode" value="5544"><br><br>
+
+    <label for="nameoncard">ame on the card:</label>
+    <input type="text" id="nameoncard" name="nameoncard" value="thirunavukkarasu.E">
+
+
+    <form action="/action_page.php"><br><br>
+     <input type="submit" value="submit"><br><br> 
+
+     <label for="car">to going to scool :</label>
+     <select id="cars" name="car">
+        <option value="Cycle">Cycle</option>
+        <option value="bike">bike</option>
+        <option value="train">train</option>
+     </select><br><br>
+
+     <textarea name="message" rows="20" cols="50">enter your address</textarea>
+     <form class="bootom" action="/action_page.php"></form>
+
+    
+    </form>
+    <button class="bottom" onclick="alert('thank you for giving details')">click me !</button>
+
+    <form action="/action_page.php" autocomplete="on" method="get" target="_blank">
+        <input list="browser">
+        <datalist id="browser">
+            <option selected value="google">
+            <option value="indexhtml">
+            <option value="chatgbt">
+            <option value="chrome">         
+        </datalist>
+    
+    </form>
+    <form action="action_page.php" oninput="x.value=parseInt(a.value)+parsIent(b.value)">YOURS MARKS
+        <input type="range" id="a" name="a" value="50">
+        50 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+    
+    
+
+    
+</fieldset>    
+
+
+
+</center>
+
+
+
+</body>
+
+
+
+</html>
